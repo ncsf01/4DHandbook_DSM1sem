@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Iniciante em 4D - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg width="45" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,8 86,29 86,71 50,92 14,71 14,29" fill="#ffffff" stroke="#000000"
+                        stroke-width="8" stroke-linejoin="round" />
+                    <text x="50" y="62" fill="#000000" font-family="'Courier New', Courier, monospace" font-weight="900"
+                        font-size="32" text-anchor="middle">4D</text>
+                </svg>
+                <span>Manual do Iniciante em 4D</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li> <!-- Página ativa -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO CONTATO -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tag">Fale Conosco</span>
+                    <p>Tem alguma dúvida sobre o estilo 4D, quer dar feedback das suas sessões de jogo em que conseguiu
+                        aplicar o estilo?</p>
+                </div>
+                <div class="hero-graphic">
+                    <div class="circle-decoration">
+                        <svg width="45" height="40" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="50,8 86,29 86,71 50,92 14,71 14,29" fill="#000000" stroke="#ffffff"
+                                stroke-width="8" stroke-linejoin="round" />
+                            <text x="50" y="62" fill="#ffffff" font-family="'Courier New', Courier, monospace"
+                                font-weight="900" font-size="32" text-anchor="middle">4D</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO COM ESTRUTURA DIVIDIDA (DIVIDIDA EM 2 COLUNAS VIA FLEXBOX) -->
+        <section class="section container">
+            <div class="split-section">
+                <!-- COLUNA DA ESQUERDA: FORMULÁRIO -->
+                <div class="split-left">
+                    <div class="section-title-wrapper">
+                        <h2 class="section-title">Envie sua mensagem</h2>
+                        <p class="section-desc">Escreva para a nossa equipe. Retornaremos sua mensagem o mais rápido
+                            possível!</p>
+                    </div>
+                    <div class="contact-form-card">
+                        <!-- O atributo onsubmit previne o recarregamento da página e exibe um alerta explicativo -->
+                        <form action="#" method="POST"
+                            onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! (Atividade escolar fictícia)');">
+                            <div class="form-group">
+                                <label for="email">Seu e-mail</label>
+                                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="Ex: Dúvida sobre Cocriação, Relato de mesa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Escreva os detalhes da sua mensagem aqui..." required></textarea>
+                            </div>
+                            <button type="submit" class="form-btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- COLUNA DA DIREITA: CANAIS DE COMUNICAÇÃO -->
+                <div class="split-right">
+                    <div class="section-title-wrapper">
+                        <h2 class="section-title">Outros canais</h2>
+                        <p class="section-desc">Conecte-se com nossa comunidade ativa e encontre canais com sessões e
+                            discussões ao vivo:</p>
+                    </div>
+                    <div class="channels-list">
+                        <!-- ITEM DE CANAL 1: DISCORD -->
+                        <div class="channel-item">
+                            <div class="channel-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                                </svg>
+                            </div>
+                            <div class="channel-info">
+                                <h4>Comunidade no Discord</h4>
+                                <p>Servidor Oficial <strong>The RPG Crusade</strong></p>
+                                <a href="https://discord.gg/q4aff4vwR4" target="_blank">discord.gg/q4aff4vwR4</a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM DE CANAL 2: YOUTUBE -->
+                        <div class="channel-item">
+                            <div class="channel-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                                </svg>
+                            </div>
+                            <div class="channel-info">
+                                <h4>Canais do YouTube</h4>
+                                <p>Assista a discussões teóricas e práticas de mesas 4D:</p>
+                                <a href="https://www.youtube.com/@Better_With_Bacon" target="_blank">Better with Bacon
+                                    (James Bacon)</a><br>
+                                <a href="https://www.youtube.com/@Tablerunner" target="_blank">Tablerunner Crispy (Chris
+                                    Papworth)</a>
+                            </div>
+                        </div>
+
+                        <!-- ITEM DE CANAL 3: CONTATOS DIRETOS -->
+                        <div class="channel-item">
+                            <div class="channel-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </div>
+                            <div class="channel-info">
+                                <h4>Contato com os Autores</h4>
+                                <p>Usuários para envio de mensagens diretas:</p>
+                                <p><strong>Michael Melnick:</strong> DMHRelic (Discord)</p>
+                                <p><strong>James Bacon:</strong> Bacon6126 (Discord)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Manual do Iniciante em 4D. Desenvolvido para a Atividade de Desenvolvimento Web da FATEC.</p>
+    </footer>
+</body>
+
+</html>

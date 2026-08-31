@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"> <!-- Define o idioma do documento como português do Brasil -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Suporte a caracteres especiais (acentos, ç, etc.) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante renderização correta em dispositivos móveis -->
     <title>Manual do Iniciante em 4D - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos CSS -->
 </head>
 
 <body>
+    <!-- CABEÇALHO COM LOGO E MENU -->
     <header>
         <div class="header-container">
+            <!-- Logo principal com vetor SVG -->
             <a href="index.html" class="logo">
                 <svg width="45" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Hexágono completo com fundo branco e borda preta bem grossa -->
                     <polygon points="50,8 86,29 86,71 50,92 14,71 14,29" fill="#ffffff" stroke="#000000"
                         stroke-width="8" stroke-linejoin="round" />
-
-                    <!-- Texto 4D escrito em preto bold -->
                     <text x="50" y="62" fill="#000000" font-family="'Courier New', Courier, monospace" font-weight="900"
                         font-size="32" text-anchor="middle">4D</text>
                 </svg>
-                <span>The Beginner's 4D Handbook</span>
+                <span>Manual do Iniciante em 4D</span>
             </a>
+            <!-- Menu de navegação -->
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li> <!-- 'active' indica a página atual -->
                     <li><a href="about.html">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
@@ -33,8 +34,9 @@
         </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
     <main>
-        <!-- Hero Section -->
+        <!-- SEÇÃO HERO (BANER PRINCIPAL) -->
         <section class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
@@ -43,15 +45,13 @@
                         Uma abordagem holística para criar momentos memoráveis no seu RPG.</p>
                     <a href="about.html" class="hero-btn">Conheça o Estilo 4D</a>
                 </div>
+                <!-- Gráfico decorativo -->
                 <div class="hero-graphic">
                     <div class="circle-decoration">
                         <svg width="45" height="40" viewBox="0 0 100 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <!-- Hexágono completo com fundo branco e borda preta bem grossa -->
                             <polygon points="50,8 86,29 86,71 50,92 14,71 14,29" fill="#000000" stroke="#ffffff"
                                 stroke-width="8" stroke-linejoin="round" />
-
-                            <!-- Texto 4D escrito em preto bold -->
                             <text x="50" y="62" fill="#ffffff" font-family="'Courier New', Courier, monospace"
                                 font-weight="900" font-size="32" text-anchor="middle">4D</text>
                         </svg>
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <!-- Intro Section -->
+        <!-- SEÇÃO DE INTRODUÇÃO -->
         <section class="section container">
             <div class="section-title-wrapper">
                 <h2 class="section-title">O que é o RPG em 4D?</h2>
@@ -69,11 +69,10 @@
                     distrações para que você realmente possa jogar RPG.</p>
             </div>
 
-            <!-- 3 Main Pillars Cards -->
+            <!-- CARDS DOS TRÊS PILARES -->
             <div class="cards-container">
                 <div class="card">
                     <div class="card-icon">
-                        <!-- Coração/Confiança -->
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path
@@ -87,7 +86,6 @@
 
                 <div class="card">
                     <div class="card-icon">
-                        <!-- Chat/Foco -->
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -100,7 +98,6 @@
 
                 <div class="card">
                     <div class="card-icon">
-                        <!-- Avanço Rápido/Velocidade -->
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <polygon points="5 4 15 12 5 20 5 4" />
@@ -113,15 +110,38 @@
                 </div>
             </div>
 
-            <!-- Citação Chris Papworth -->
+            <!-- CAIXA DE CITAÇÃO -->
             <div class="callout">
                 "O foco na interpretação de personagens é para todos? Na minha experiência, não; no entanto, é
                 exatamente o que busco, e não estou sozinho... Nós, que defendemos o estilo de jogo 4D, sustentamos que
                 a interpretação de papéis satisfaz melhor a premissa dos RPGs." — Chris Papworth, Novembro de 2025
             </div>
         </section>
+
+        <!-- SEÇÃO DO MANUAL COMPLETO (E-BOOK) -->
+        <section class="section container section-book">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">O Manual Completo</h2>
+                <p class="section-desc">Quer se aprofundar no estilo 4D? Confira a versão completa em livro, disponível
+                    na DriveThruRPG.</p>
+            </div>
+            <div class="book-showcase">
+                <!-- Wrapper criado para o Flexbox manter a foto e informações lado a lado -->
+                <div class="book-content">
+                    <img src="capa.webp" alt="Capa do livro The Beginner's 4D Handbook" class="book-cover">
+                    <div class="book-info">
+                        <h3>The Beginner's 4D Handbook</h3>
+                        <p>A Roleplay Style Primer, por Mike Melnick e James Bacon.</p>
+                        <!-- Botão com classes combinadas (form-btn e book-btn) -->
+                        <a href="https://www.drivethrurpg.com/en/product/549599/the-beginner-s-4d-handbook?language=en"
+                            target="_blank" class="form-btn book-btn">Ver no DriveThruRPG</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- RODAPÉ -->
     <footer>
         <p>&copy; 2026 Manual do Iniciante em 4D. Desenvolvido para a Atividade de Desenvolvimento Web da FATEC.</p>
     </footer>
