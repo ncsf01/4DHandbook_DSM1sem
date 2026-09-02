@@ -265,6 +265,8 @@ nav a.active {
     /* Alinha os itens à esquerda */
     gap: 10px;
     /* Espaçamento vertical entre cada elemento */
+    margin-top: 35px;
+    margin-left: 25px;
 }
 
 .book-info h3 {
