@@ -67,8 +67,13 @@ header {
 }
 
 .logo svg {
-    width: 45px;
-    height: 40px;
+    width: 70px;
+    height: 65px;
+}
+
+.logo-hero svg {
+    width: 170px;
+    height: 165px;
 }
 
 .logo span {
@@ -186,17 +191,19 @@ nav a.active {
     align-items: center;
 }
 
+/* 
 .circle-decoration {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 3px dashed #ffffff;
     /* Circulo com borda tracejada em branco */
-    border-radius: 50%;
+/* border-radius: 50%;
     /* Transforma a div retangular em um círculo perfeito */
-    display: flex;
+/* display: flex;
     align-items: center;
     justify-content: center;
 }
+ */
 
 /* ESTRUTURA GERAL DAS SEÇÕES */
 .section {
