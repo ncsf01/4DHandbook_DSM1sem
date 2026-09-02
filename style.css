@@ -134,22 +134,22 @@ nav a.active {
     color: #000000;
     padding: 3px 8px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 15px;
     border: 1px solid #ffffff;
 }
 
-.hero h1 {
+/* .hero h1 {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: 20px;
     letter-spacing: -1px;
-    /* Junta ligeiramente as letras */
-}
+    Junta ligeiramente as letras
+} */
 
 .hero p {
     font-size: 16px;
