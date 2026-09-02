@@ -514,6 +514,11 @@ footer {
 /* REGRAS DE RESPONSIVIDADE (MEDIA QUERIES) */
 /* Aplica estes estilos apenas para telas com largura de até 768px (tablets e celulares) */
 @media (max-width: 768px) {
+    .header-container span {
+        font-size: 18px;
+        margin-right: 20px
+    }
+
     .hero-container {
         flex-direction: column;
         /* Empilha os elementos do Hero na vertical */
